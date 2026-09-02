@@ -42,10 +42,10 @@ Après avoir joué avec Turtle commencez, vous pouvez essayer de dessiner des fo
 
 *(Il est inutile de réaliser toutes les formes. Je vous conseille de faire Carré, Triangle et Étoiles (utiles pour la suite) et une ou deux que vous apprécierez faire.)*
 
-<aside>
-💡
+<aside markdown="1">
 
-**Astuce**
+
+💡 **Astuce**
 Essayer de créer une nouvelle fonction à chaque fois pour garder une trace de ce que vous avez fait. Ainsi il suffit d’appeler ou pas la fonction pour dessiner.
 
 </aside>
@@ -92,7 +92,7 @@ sommet commun la position initiale de la tortue.
 Les longueurs des carrés sont comprises entre 10 à 50 (inclus).
 Les longueurs de chacun des carrés varient de 10 en 10.
 
-![image.png](TP%20Turtle/image.png)
+![image.png](Turtle/image.png)
 
 Vous pouvez également proposer une variante `vingt_carres()` qui dessine cinquante carrés de longueurs comprises entre 10 et 200 inclus.
 C’est plus joli, mais il est plus difficile de vérifier qu’il y a bien 20 carrés dessinés.
@@ -108,7 +108,7 @@ dessine_un_polygone(3,100)
 
 …produira le dessin suivant:
 
-![image.png](TP%20Turtle/image%201.png)
+![image.png](Turtle/image%201.png)
 
 ## **Exercice 6 : Des frises carrées**
 
