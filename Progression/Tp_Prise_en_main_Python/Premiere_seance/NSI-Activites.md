@@ -56,6 +56,7 @@ Exécuter le code, comme précédemment.
 Vous constaterez que rien n’a changé dans la console.
 
 <aside  markdown="1">
+    
 💡
 
 Le symbole `=` ici utilisé n'a **rien à voir** avec le symbole = utilisé en mathématique.
@@ -104,6 +105,7 @@ Vous devriez obtenir une erreur dans la console, la dernière ligne est la plus 
 ![image.png](NSI-Activites/image%205.png)
 
 <aside  markdown="1">
+    
 💡
 
 Ici “defined” peut être traduit par : “**affecté”**  
@@ -151,6 +153,7 @@ b = 12
 Après avoir exécuté ce programme, nous allons vérifier le type de ces deux variables.
 
 <aside  markdown="1">
+    
 💡
 
 Voici les types Python les plus fréquemment utilisés cette année:
@@ -173,6 +176,7 @@ La fonction type(y) donnera une une nouvelle valeur qui pourra être utiliser av
 Vérifiez que le type de la variable *a* est float et le type de la variable *b* est *int*
 
 <aside  markdown="1">
+    
 💡
 
 ### **Syntaxe classique et syntaxe Bonus**
@@ -203,6 +207,7 @@ On initialise une variable `cellule` à 1 et on la multiplie par 2.
 On initialise une variable `capital` à 1000 et on lui enlève 5%.
 
 <aside  markdown="1">
+    
 💡
 
 ### Les opérations de Python
@@ -297,6 +302,7 @@ Nous allons faire de même pour nos variables. Nous allons utiliser une variable
 Vous pouvez vérifier maintenant que les valeurs de `a` et de `b` ont bien été échangées.
 
 <aside  markdown="1">
+    
 💡
 
 ### **Syntaxe classique et syntaxe Bonus**
