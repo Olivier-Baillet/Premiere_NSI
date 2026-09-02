@@ -1,6 +1,6 @@
 # Pages web et interactions
 
-![image.png](Pages%20web%20et%20interactions/a340165c-57e9-485a-8ba2-b2ad3fc64fe0.png)
+![image.png](Pages_web_interactions/a340165c-57e9-485a-8ba2-b2ad3fc64fe0.png)
 
 ## Utilisation de Javascript
 
