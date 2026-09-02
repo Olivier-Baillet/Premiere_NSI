@@ -6,10 +6,10 @@ CSS
 
 :root {
     --primary-color: #3B87EB;
-    --bg-color: #1E2129;
-    --card-bg: #ffffff;
-    --text-color: #1e293b;
-    --text-muted: #64748b;  /* Texte secondaire clair */
+    --bg-color: #1E2129;       /* Fond global sombre */
+    --card-bg: #2A2E39;        /* Cartes légèrement plus claires que le fond */
+    --text-color: #F1F5F9;     /* Texte principal très clair */
+    --text-muted: #94A3B8;    /* Texte secondaire clair */
 }
 
 body {
