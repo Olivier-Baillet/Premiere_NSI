@@ -14,9 +14,9 @@ En Python, on peut définir une fonction avec le mot-clé `def`.
 En règle générale, une fonction s'applique à un ou plusieurs paramètres, et renvoie (au moins) une valeur.
 
 <aside markdown="1">
-💡
 
-### **Définir une fonction - syntaxe générale**
+
+### 💡 **Définir une fonction - syntaxe générale**
 
 Pour définir une fonction, on utilise le mot-clé `def` suivi du nom de la fonction, avec le(s) paramètre(s) entre parenthèses. Le bloc d'instructions constituant **le corps** de la fonction doit être indenté.
 
@@ -68,10 +68,9 @@ Dans la console, faites un appel à la fonction:
 903
 ```
 
-<aside>
-💡
+<aside markdown="1">
 
-### **Vocabulaire**
+### 💡 **Vocabulaire**
 
 Dans cet exemple:
 
