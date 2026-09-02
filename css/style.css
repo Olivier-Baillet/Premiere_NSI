@@ -1,4 +1,7 @@
 CSS
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 :root {
     --primary-color: #3B87EB;
