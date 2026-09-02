@@ -280,7 +280,7 @@ Comment la préserver ?
 
 La situation est similaire au problème suivant : comment échanger le contenu de ces deux verres ?
 
-![image.png](NSI-Activites_Old/image%208.png)
+![image.png](NSI-Activités_Old/image%208.png)
 
 La méthode est évidente : il nous faut un troisième verre.
 
