@@ -5,7 +5,7 @@
 Pour écrire nos programmes en Python, nous utiliserons le logiciel Thonny.
 Une fois Thonny lancé, vous devriez obtenir quelque chose qui ressemble à cela :
 
-![image.png](NSI%20Activit%C3%A9s/image.png)
+![image.png](NSI-Activites/image.png)
 
 Afin de bien démarrer, commencer par créer un dossier nommer **NSI** sur votre bureau.
 
@@ -17,11 +17,11 @@ Puis sauvegarder votre fichier, pour cela, cliquer sur l’onglet de Thonny :
 > Positionner vous dans le dossier nouvellement créé NSI de votre bureau → Nommer le fichier : Programme.py
 > 
 
-![image.png](NSI%20Activit%C3%A9s/image%201.png)
+![image.png](NSI-Activites/image%201.png)
 
 Thonny se divise en plusieurs fenêtres, mais la fenêtre qui va principalement nous intéresser, est la fenêtre centrale dont l’onglet doit maintenant être intitulé “Programme.py”
 
-![image.png](NSI%20Activit%C3%A9s/278d54b6-3beb-42d2-bc0c-c864e063d5ba.png)
+![image.png](NSI-Activites/278d54b6-3beb-42d2-bc0c-c864e063d5ba.png)
 
 Maintenant dans cette fenêtre, saisissez exactement le programme suivant :
 
@@ -31,17 +31,17 @@ print("hello world !")
 
 Ce qui nous donne :
 
-![image.png](NSI%20Activit%C3%A9s/75c47012-c8f9-459d-9048-801825794f83.png)
+![image.png](NSI-Activites/75c47012-c8f9-459d-9048-801825794f83.png)
 
 Cliquez sur le “bouton vert" en dessous de l’onglet “Edition” et “Affichage”, afin d'exécuter le programme qui vient d'être saisi.
 
-![image.png](NSI%20Activit%C3%A9s/image%202.png)
+![image.png](NSI-Activites/image%202.png)
 
 Ce qui nous amène à notre deuxième fenêtre : la console
 
 Où vous devez voir le message "hello world !" apparaître dedans.
 
-![image.png](NSI%20Activit%C3%A9s/image%203.png)
+![image.png](NSI-Activites/image%203.png)
 
 ## **Affectation**
 
@@ -87,7 +87,7 @@ N.B. : Dans la suite la procédure sera toujours la même :
 
 A moins qu’il y est une indication contraire, rajouter les différentes instructions à la suite des précédentes.
 
-![image.png](NSI%20Activit%C3%A9s/image%204.png)
+![image.png](NSI-Activites/image%204.png)
 
 </aside>
 
@@ -101,7 +101,7 @@ Que constatez vous dans la console lorsque vous exécuter le nouveau programme ?
 
 Vous devriez obtenir une erreur dans la console, la dernière ligne est la plus importante ici :
 
-![image.png](NSI%20Activit%C3%A9s/image%205.png)
+![image.png](NSI-Activites/image%205.png)
 
 <aside>
 💡
@@ -280,7 +280,7 @@ Comment la préserver ?
 
 La situation est similaire au problème suivant : comment échanger le contenu de ces deux verres ?
 
-![image.png](NSI%20Activit%C3%A9s%20Old/image%208.png)
+![image.png](NSI-Activites%20Old/image%208.png)
 
 La méthode est évidente : il nous faut un troisième verre.
 
