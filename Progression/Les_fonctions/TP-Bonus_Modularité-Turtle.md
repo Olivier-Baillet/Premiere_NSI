@@ -7,7 +7,7 @@
 On souhaite écrire un programme qui permet de générer « aléatoirement » le dessin d’une rue de 4 immeubles.
 On utilisera pour cela le module Turtle de Python.
 
-![image.png](TP%20Bonus%20Modularit%C3%A9%20(avec%20Turtle)/image.png)
+![image.png](Bonus_Modularité-Turtle/image.png)
 
 ### Contraintes
 
@@ -34,14 +34,14 @@ La série d'exemples ci-dessous est basée sur :
 - deux modèles d'ouvertures pour les étages : fenêtre ou porte-fenêtre avec balcon ;
 - trois éléments horizontalement pour chaque niveau.
 
-![image.png](TP%20Bonus%20Modularit%C3%A9%20(avec%20Turtle)/image%201.png)
+![image.png](Bonus_Modularité-Turtle/image%201.png)
 
 ### Travail à faire
 
 Proposer un programme sous forme de modules qui réponde au problème posé en utilisant le module Turtle de Python.
 Vous utiliserez donc le plus de petites fonctions possible comme décrit ci-dessous.
 
-![image.png](TP%20Bonus%20Modularit%C3%A9%20(avec%20Turtle)/image%202.png)
+![image.png](Bonus_Modularité-Turtle/image%202.png)
 
 Vous travaillerez collectivement et en interdépendance à travers des importations de
 modules.
