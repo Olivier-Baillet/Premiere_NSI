@@ -1,4 +1,8 @@
 CSS
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 
 :root {
     --primary-color: #3B87EB;
@@ -55,8 +59,8 @@ header p { margin-top: 0.5rem; opacity: 0.9; }
 
 .btn {
     display: inline-block;
-    /*background-color: var(--primary-color);
-    color: white;*/
+    background-color: var(--primary-color);
+    color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
