@@ -13,7 +13,7 @@ En Python, on peut définir une fonction avec le mot-clé `def`.
 
 En règle générale, une fonction s'applique à un ou plusieurs paramètres, et renvoie (au moins) une valeur.
 
-<aside>
+<aside markdown="1">
 💡
 
 ### **Définir une fonction - syntaxe générale**
