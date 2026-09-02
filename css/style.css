@@ -3,7 +3,7 @@ CSS
     box-sizing: border-box;
 }
 :root {
-    --primary-color: #3B87EB;
+    --primary-color: #27599C;
     --bg-color: #1E2129;       /* Fond sombre */
     --card-bg: #2A2E39;        /* Carte un peu plus claire que le fond */
     --text-color: #F1F5F9;     /* Texte clair pour la lisibilité */
@@ -42,7 +42,7 @@ header .header-content {
 
 header h1 { margin: 0; font-size: 2rem; }
 
-container {
+.container {
     max-width: 1000px;
     margin: 2rem auto;
     padding: 0 1rem;
