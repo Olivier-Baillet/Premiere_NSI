@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture réseaux - Mes Cours</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --text-muted: #64748b;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+        }
+
+        header .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .back-link:hover { color: white; text-decoration: underline; }
+
+        header h1 { margin: 0; font-size: 2rem; }
+
+        container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: block;
+        }
+
+        .list-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .item {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .item-info h3 { margin: 0 0 0.3rem 0; font-size: 1.1rem; }
+        .item-info p { margin: 0; color: var(--text-muted); font-size: 0.9rem; }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        .btn:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <!-- Lien de retour vers l'accueil -->
+            <a href="../../index.html" class="back-link">← Retour à l'accueil</a>
+
+          
+            <h1>Architecture Réseau</h1>
+            <p>Retrouver ici tous les documents et TPs du cours</p>
+        </div>
+    </header>
+
+    <container>
+        <div class="list-group">
+            <div class="item">
+                <div class="item-info">
+                    <h3>Architecture réseau</h3>
+                    <p>Utilisation de Filius</p>
+                </div>
+                <a href="Architecture_réseau" class="btn" target="_blank">Afficher</a>
+            </div>
+
+          <div class="item">
+              <div class="item-info">
+                  <h3>Protocoles de communication dans un réseau</h3>
+                  <p>Comprendre le modèle OSI,et le modèle Internet</p>
+              </div>
+              <a href="Protocoles_communication_réseau" class="btn" target="_blank">Afficher</a>
+          </div>
+
+          <div class="item">
+              <div class="item-info">
+                  <h3>Observation des trames avec Filius</h3>
+                  <p>Faire des pings pour trouver la faille. </p>
+              </div>
+              <a href="Observation_trames_Filius" class="btn" target="_blank">Vers Capytale</a>
+          </div>
+
+          <div class="item">
+              <div class="item-info">
+                  <h3>Protocole du bit alterné</h3>
+                  <p>Ce protocole est un exemple simple de fiabilisation du transfert de données.</p>
+              </div>
+              <a href="Protocole_bit_alterné" class="btn" target="_blank">Afficher</a>
+          </div>
+          
+          <div class="item">
+              <div class="item-info">
+                  <h3>Découvrir les commandes UNIX</h3>
+                  <p>Qu'est ce que fait "LS" ?</p>
+              </div>
+              <a href="Découverte_commandes_UNIX" class="btn" target="_blank">Afficher</a>
+          </div>
+          <div class="item">
+                <div class="item-info">
+                    <h3>Exercices</h3>
+                    <p>Exercices de sujet bac, pour s'entrainer.</p>
+                </div>
+                <a href="Exercice" class="btn" target="_blank">Afficher</a>
+                <a href="Exercices_Soluce" class="btn" target="_blank">Afficher</a>
+            </div>
+        </div>
+    </container>
+
+</body>
+</html>
