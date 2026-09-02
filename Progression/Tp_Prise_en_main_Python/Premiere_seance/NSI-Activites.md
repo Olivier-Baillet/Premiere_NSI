@@ -55,7 +55,7 @@ Exécuter le code, comme précédemment.
 
 Vous constaterez que rien n’a changé dans la console.
 
-<aside>
+<aside  markdown="1">
 💡
 
 Le symbole `=` ici utilisé n'a **rien à voir** avec le symbole = utilisé en mathématique.
@@ -83,7 +83,7 @@ N.B. : Dans la suite la procédure sera toujours la même :
 • Dans un premier temps vous saisissez votre programme
 • Puis vous utiliserez la fonction “print(X)”, pour afficher le ou les variables à vérifier
 
-<aside>
+<aside  markdown="1">
 
 A moins qu’il y est une indication contraire, rajouter les différentes instructions à la suite des précédentes.
 
@@ -103,7 +103,7 @@ Vous devriez obtenir une erreur dans la console, la dernière ligne est la plus 
 
 ![image.png](NSI-Activites/image%205.png)
 
-<aside>
+<aside  markdown="1">
 💡
 
 Ici “defined” peut être traduit par : “**affecté”**  
@@ -150,7 +150,7 @@ b = 12
 
 Après avoir exécuté ce programme, nous allons vérifier le type de ces deux variables.
 
-<aside>
+<aside  markdown="1">
 💡
 
 Voici les types Python les plus fréquemment utilisés cette année:
@@ -172,7 +172,7 @@ La fonction type(y) donnera une une nouvelle valeur qui pourra être utiliser av
 
 Vérifiez que le type de la variable *a* est float et le type de la variable *b* est *int*
 
-<aside>
+<aside  markdown="1">
 💡
 
 ### **Syntaxe classique et syntaxe Bonus**
@@ -202,7 +202,7 @@ On initialise une variable `cellule` à 1 et on la multiplie par 2.
 Écrire le code en «classique» ou en «bonus» pour l'instruction suivante :
 On initialise une variable `capital` à 1000 et on lui enlève 5%.
 
-<aside>
+<aside  markdown="1">
 💡
 
 ### Les opérations de Python
@@ -280,7 +280,7 @@ Comment la préserver ?
 
 La situation est similaire au problème suivant : comment échanger le contenu de ces deux verres ?
 
-![image.png](NSI-Activites%20Old/image%208.png)
+![image.png](NSI-Activites_Old/image%208.png)
 
 La méthode est évidente : il nous faut un troisième verre.
 
@@ -296,7 +296,7 @@ Nous allons faire de même pour nos variables. Nous allons utiliser une variable
 
 Vous pouvez vérifier maintenant que les valeurs de `a` et de `b` ont bien été échangées.
 
-<aside>
+<aside  markdown="1">
 💡
 
 ### **Syntaxe classique et syntaxe Bonus**
