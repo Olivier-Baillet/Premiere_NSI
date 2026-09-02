@@ -1,7 +1,5 @@
 CSS
-*, *::before, *::after {
-    box-sizing: border-box;
-}
+
 :root {
     --primary-color: #27599C;
     --bg-color: #1E2129;       /* Fond sombre */
