@@ -63,7 +63,7 @@ Le symbole `=` ici utilisé n'a **rien à voir** avec le symbole = utilisé 
 On dit qu'on a **affecté** à `point_de_vie` la valeur 32, et il faut se représenter mentalement cette action par l'écriture `point_de_vie ← 32`.
 
 > La variable “point_de_vie” **prend la valeur** “32”.
-> 
+
 </aside>
 
 Pour visualiser dans la console notre variable nouvellement créé du nom de “point_de_vie”, il faut réutiliser la fonction :
@@ -168,6 +168,7 @@ Voici les types Python les plus fréquemment utilisés cette année:
 | `list` | liste | `[0, 1, 2, 3, 4, 5]` |
 | `dict` | dictionnaire | `{'Homer':43, 'Marge':41, 'Bart':12, 'Lisa':10, 'Maggie':4}` |
 | `function` | fonction | `print` |
+
 </aside>
 
 Pour cela, nous utiliserons la fonction type(y), où y prendra les valeurs de “a” puis une seconde pour “b”.
@@ -224,6 +225,7 @@ Dans le tableau ci-après, sont présentés les symboles utilisés pour les opé
 | division | / | 7.0 / 2 donne 3.5 |
 | reste de division entière | %(modulo) | 7 % 3 donne 1 |
 | quotient de division entière | // | 7 // 3 donne 2 |
+
 </aside>
 
 Quelles sont les valeurs et les types des variables suivantes : d, e, f après l'exécution du programme ci-dessous
