@@ -1,0 +1,134 @@
+# Observation des trames avec Filius
+
+## Ping à travers un switch
+
+- Relions une machine `192.168.0.10` d'adresse MAC `BC:81:81:42:9C:31` à une machine `192.168.0.11` d'adresse MAC `2A:AB:AC:27:D6:A7` à travers un switch.
+
+![](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/K1.png)
+
+- Observons la table SAT de notre switch : elle est vide, car aucune machine n'a encore cherché à communiquer.
+
+![](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/K2.png)
+
+- Lançons un ping depuis `192.168.0.10` vers `192.168.0.11` et observons les données échangées :
+
+![](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/K3.png)
+
+- Observons de plus près la première ligne de données échangées.
+
+![](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/K4.png)
+
+Cette première ligne est une requête **ARP**. ARP est un protocole qui s'interface entre la couche 3 / réseau (appelée dans la capture d'écran *Internet*) et la couche 2 / liaison (appelée dans la capture d'écran *Réseau*). Comme indiqué dans le commentaire, elle consiste à un appel à tout le réseau : "Est-ce que quelqu'un ici possède l'IP `192.168.0.11` ?
+
+### **Message 1 : « Qui possède l'IP `192.168.0.11` ? »**
+
+Il faut comprendre à cette étape que l'adresse IP est totalement inutile pour répérer un ordinateur dans un sous-réseau. Ce sont les adresses MAC qui permettent de se repérer dans un sous-réseau. Les adresses IP, elles, permettront éventuellement d'acheminer le message jusqu'au bon sous-réseau (elles n'intéressent donc que les routeurs).
+
+Revenons à notre ping vers `192.168.0.11`.
+
+La commande `arp -a` effectuée dans un terminal de la machine `192.168.0.10` nous permet de voir qu'elle ne connaît encore personne dans son sous-réseau. La table de correspondance IP ⮀ MAC ne contient que l'adresse de broadcast `255.255.255.255`, qui permet d'envoyer un message à tout le réseau.
+
+![](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/K5.png)
+
+Constatant qu'elle ne sait pas quelle est l'adresse MAC de `192.168.0.11`, la machine `192.168.0.10` commence donc par envoyer un message à **tout** le sous-réseau, par l'adresse MAC de broadcast `FF:FF:FF:FF:FF:FF`. Le switch va lui aussi lui aussi relayer ce message à tous les équipements qui lui sont connectés (dans notre cas, un seul ordinateur)
+
+### **Message 2 : « Moi ! »**
+
+La machine `192.168.0.11` s'est reconnu dans le message de broadcast de la machine `192.168.0.10`. Elle lui répond pour lui donner son adresse MAC.
+
+![](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/K6.png)
+
+À partir de ce moment, la machine `192.168.0.10` sait comment communiquer avec `192.168.0.11`. Elle l'écrit dans sa table `arp`, afin de ne plus avoir à émettre le message n°1 :
+
+![](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/K7.png)
+
+Le switch, qui a vu passer sur ses ports 0 et 1 des messages venant des cartes MAC `BC:81:81:42:9C:31` et `2A:AB:AC:27:D6:A7`, peut mettre à jour sa table SAT :
+
+![](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/K9.png)
+
+Par la suite, il saura sur quel port rediriger les messages destinés à ces deux adresses MAC. Un switch est un équipement de réseau de la couche 2 du modèle OSI, il ne sait pas lire les adresses IP : il ne travaille qu'avec les adresses MAC.
+
+### **Message 3 : le ping est envoyé**
+
+![](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/K8.png)
+
+Schématisons cette trame Ethernet (couche 2 du modèle OSI) :
+
+![](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/trame1.png)
+
+### **Message 4 : le pong est retourné**
+
+![](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/K10.png)
+
+![](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/trame2.png)
+
+## Ping à travers un routeur
+
+Vous pouvez télécharger le fichier [ping_routeur.fls](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/ping_routeur.fls).
+
+![](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/schema_routeur.png)
+
+L'objectif est d'observer les différentes trames lors d'un ping entre :
+
+- la machine `192.168.0.1 / 24` (adresse MAC `F9:E1:D6:0B:29:03` ) et
+- la machine `192.168.1.1 / 24` (adresse MAC `D3:79:96:B8:5C:A4` )
+
+Le routeur est configuré ainsi :
+
+- interface sur le réseau A :
+    - IP : `192.168.0.254`
+    - MAC : `77:C2:22:C9:5C:E7`
+- interface sur le réseau B :
+    - IP : `192.168.1.254`
+    - MAC : `66:E5:4E:7D:0B:B0`
+
+### **Étape 0 : le routeur signale sa présence**
+
+Lors de l'observation des messages reçus ou émis par la machine `192.168.0.1`, on peut être intrigué par ce tout premier message reçu, émis par le routeur :
+
+![](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/K11.png)
+
+On peut y distinguer les 4 couches du modèle Internet.
+Le routeur, par ce message distribué à tous les éléments du sous-réseau A (il envoie un message équivalent sur son sous-réseau B), déclare sa présence, et le fait qu'il possède deux interfaces, une pour chaque réseau.
+Il se positionne ainsi comme une passerelle : «c'est par moi qu'il faudra passer si vous voulez sortir de votre sous-réseau».
+Dans cette trame envoyée figure son adresse MAC, de sorte que tous les membres de son sous-réseau pourront donc communiquer avec lui.
+
+### **Étape 1 : de `192.168.0.1` vers le routeur**
+
+La machine `192.168.0.1 / 24` calcule que la machine `192.168.1.1 / 24` avec laquelle elle veut communiquer n'est **pas** dans son sous-réseau. Elle va donc envoyer son message à sa passerelle, qui est l'adresse du routeur dans son sous-réseau.
+
+Cette première trame est :
+
+![](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/trame3.png)
+
+### **Étape 2 : le routeur décapsule la trame**
+
+Le routeur est un équipement de réseau de couche 3 (couche réseau). Il doit observer le contenu du paquet IP (sans remonter jusqu'au contenu du message) pour savoir, suivant le procédé de **routage** (voir cours de Terminale), où acheminer ce paquet.
+
+Dans notre cas, l'adresse IP `192.168.1.1`de destination lui est accessible : elle fait partie de son sous-réseau B.
+
+Le routeur va modifier la valeur du TTL (Time To Live), en la décrémentant de 1. Si, après de multiples routages, cette valeur devenait égale à 0, ce paquet serait détruit. Ceci a pour but d'éviter l'encombrement des réseaux avec des paquets ne trouvant pas leur destination.
+
+- **NAT : translation d'adresse**
+    
+    Dans notre cas, le routeur va laisser intacte l'adresse IP Source. Ce n'est pas toujours le cas. Dans le cas classique de la box qui relie votre domicile à internet, le routeur contenu dans celle-ci va remplacer l'adresse locale de votre ordinateur ou smartphone (ex `192.168.0.26`) par son IP publique (celle apparaissant sur [whatsmyip.com](http://whatsmyip.com/), par exemple). Elle effectue ce qu'on appelle une translation d'adresse (NAT). Pourquoi ? Parce que sinon la réponse du serveur distant que vous interrogez serait envoyée sur une adresse locale (votre adresse `192.168.0.26`), qui est introuvable depuis un réseau extérieur. Il faut donc remplacer toutes les adresses locales par l'IP publique de votre box. Pour éviter que la réponse du serveur web que vous avez interrogé ne soit affichée sur l'ordinateur de vos parents, le routeur affecte des ports différents à chaque machine de son sous-réseau. Ce port est inclus dans le message transmis au serveur, et il l'est aussi dans sa réponse : le routeur peut donc rediriger le trafic vers la bonne machine du sous-réseau.
+    
+
+Le routeur va ré-encapsuler le paquet IP modifié, et créer une nouvelle trame Ethernet en modifiant :
+
+- l'adresse MAC source : il va mettre l'adresse MAC de son interface dans le sous-réseau B.
+- l'adresse MAC de destination : il va mettre l'adresse MAC de `192.168.1.1` (qu'il aura peut-être récupérée au préalable par le protocole ARP)
+
+Cette deuxième trame est donc :
+
+![](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/trame4.png)
+
+On peut observer dans Filius cette trame, en se positionnant sur l'interface `192.168.1.254` du routeur, ou sur `192.168.1.1` :
+
+![](https://glassus.github.io/premiere_nsi/T3_Architecture_materielle/3.4_Protocoles_de_communication/data/K12.png)
+
+En suivant le même principe, la machine `192.168.1.1` pourra envoyer son *pong*.
+
+### **Exercice de bac**
+
+Parties 2 et 3 de l'exercice 2 du sujet [Nouvelle-Calédonie J1 2022](https://glassus.github.io/terminale_nsi/T6_Annales/data/2022/2022_Nouvelle-Caledonie_J1.pdf).
