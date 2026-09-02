@@ -1,4 +1,12 @@
 YAML
-title: Mon Site de Cours
-description: Notes de cours et ressources
+YAML
+title: Mon Site
+description: Mes cours d'informatique
 theme: jekyll-theme-hacker
+
+# Affiche un bouton de téléchargement ou un lien vers le dépôt GitHub
+show_downloads: false
+
+# Active l'interpréteur mathématique Kramdown pour tes formules LaTeX
+kramdown:
+  math_engine: mathjax
