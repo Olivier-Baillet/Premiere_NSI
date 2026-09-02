@@ -1,6 +1,6 @@
 # HTML & CSS
 
-![image.png](HTML%20&%20CSS/c47ca3ad-a8ea-4110-bbea-679964233830.png)
+![image.png](HTML_CSS/c47ca3ad-a8ea-4110-bbea-679964233830.png)
 
 ![](https://cgouygou.github.io/1NSI/T04_IHMWeb/images/htmlcssjs_meme.jpg)
 
@@ -23,10 +23,10 @@ On retiendra que HTML est un langage dit « à balises ». Ce n'est pas à propr
 
 ## **Balises**
 
-<aside>
-💡
+<aside markdown="1">
 
-### **Exemple complet minimal**
+
+### 💡 **Exemple complet minimal**
 
 Ouvrir l'éditeur de texte `gedit` et y coller le code suivant. Enregistrer le document sous le nom `exemple_minimal.html` par exemple, dans un dossier `HTML`. Puis l'ouvrir avec un navigateur (Firefox).
 
@@ -203,5 +203,3 @@ Style avec CSS : [https://capytale2.ac-paris.fr/web/c/3f95-8351671](https://capy
 Hyperlien : [https://capytale2.ac-paris.fr/web/c/304a-8351676](https://capytale2.ac-paris.fr/web/c/304a-8351676)
 
 [https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_comment)
-
-[Mini Projet - MiniWiki](HTML%20&%20CSS/Mini%20Projet%20-%20MiniWiki%202c49d1894135807e97e5c2be28e9f9b8.md)
