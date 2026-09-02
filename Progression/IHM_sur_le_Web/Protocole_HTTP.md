@@ -12,7 +12,7 @@ Le Web est une application du réseau Internet qui désigne un réseau de source
 
 la machine client demande à la machine serveur une ressource identifiée par son adresse URL. Aux débuts du Web le client était commandé par un humain mais ce peut être un programme.
 
-![Figure 1: Architecture client serveur](Protocole%20HTTP/image.png)
+![Figure 1: Architecture client serveur](Protocole_HTTP/image.png)
 
 Figure 1: Architecture client serveur
 
@@ -42,7 +42,7 @@ Le protocole HTTP n’est pas sécurisé par défaut, il peut l’être par l’
 on désigne par HTTPS sa version sécurisée. HTTP est un standard normalisé par l’IETF comme les
 protocoles d’internet TCP et IP.
 
-![Source : https://developer.mozilla.org/fr/docs/Web/HTTP/Aper%C3%A7u](Protocole%20HTTP/image%201.png)
+![Source : https://developer.mozilla.org/fr/docs/Web/HTTP/Aper%C3%A7u](Protocole_HTTP/image_1.png)
 
 Source : https://developer.mozilla.org/fr/docs/Web/HTTP/Aper%C3%A7u
 
@@ -54,7 +54,7 @@ https://www.gnu.org/gnu/linux-and-gnu.fr.html :
 www.gnu.org est un sous-domaine servant d’alias pour le dossier public du serveur ;
 Point de cours 1
 
-![image.png](Protocole%20HTTP/image%202.png)
+![image.png](Protocole_HTTP/image_2.png)
 
 • HTML pour Hypertext Markup Language est le langage de description des documents textes
 disponibles sur le Web qui sont reliées entre eux par des liens hypertextes. Il s’agit d’un
@@ -67,8 +67,6 @@ Source : https://developer.mozilla.org/fr/docs/Glossaire/HTML
 
 Ne pas confondre navigateurs comme Firefox, Edge, Chrome et moteurs de recherche comme Qwant, Google search, Bing
 
-![image.png](Protocole%20HTTP/image%203.png)
+![image.png](Protocole_HTTP/image_3.png)
 
 Source : [https://blog.octo.com/bd-le-https](https://blog.octo.com/bd-le-https)
-
-[**TP – Le protocole HTTP sur le Web**](Protocole%20HTTP/TP%20%E2%80%93%20Le%20protocole%20HTTP%20sur%20le%20Web%202cd9d189413580bdb6e3eff3c27fbc51.md)
