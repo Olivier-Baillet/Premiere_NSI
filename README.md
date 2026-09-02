@@ -1,2 +1,2 @@
-SNT
-Cours de SNT et répertoires des TPs.
+*NSI*
+Cours de NSI et répertoires des TPs.
