@@ -104,7 +104,7 @@ Il faut **toujours** s'assurer que le corps de la boucle contienne une instruc
 
 ### **Exercice 1**
 
-Trouver le plus petit nombre entier $n$ tel que $2^n$ soit supérieur à 1 milliard.
+Trouver le plus petit nombre entier $$n$$ tel que $$2^n$$ soit supérieur à 1 milliard.
 
 ### **Exercice 2**
 
