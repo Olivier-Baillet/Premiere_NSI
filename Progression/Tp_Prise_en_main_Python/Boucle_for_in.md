@@ -1,3 +1,6 @@
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 # Boucle for ... in ...
 
 # 1. Les énumérables
@@ -47,7 +50,7 @@ Il existe donc une instruction permettant de faire une (ou plusieurs) action(s) 
 > ```
 > 
 
-<aside>
+<aside markdown="1">
 
 ### **Analyse grâce à PythonTutor**
 
@@ -79,6 +82,7 @@ for m in 'NASA':
 Dans cet exercice, la **variable de boucle** `m` est **muette** : elle n'apparaît pas dans les instructions indentées sous le `for`.
 
 La variable `m` prend successivement les valeurs `'N`, `'A'`, `'S'` et `'A'`, mais on ne la voit pas.
+
 
 ## 2.3 L'indentation
 
@@ -319,50 +323,22 @@ Faire afficher les séries de nombres suivantes.
 On utilisera la syntaxe `print(k, end = ' ')` ) pour afficher les nombres horizontalement.
 
 A. `0 1 2 3 4 5`
-
-- **Correction**
-    
-    ```python
-    for k in range(6):
-        print(k, end = ' ')
-    ```
     
     ---
     
 
 B. `10 11 12 13 14 15`
 
-- **Correction**
-    
-    ```python
-    for k in range(10,16):
-        print(k, end = ' ')
-    ```
-    
     ---
     
 
 C. `3 6 9 12`
 
-- **Correction**
-    
-    ```python
-    for k in range(3,13,3):
-        print(k, end = ' ')
-    ```
-    
     ---
     
 
 D. `10 9 8 7 6 5 4 3 2 1 0`
 
-- **Correction**
-    
-    ```python
-    for k in range(10,-1,-1):
-        print(k, end = ' ')
-    ```
-    
     ---
     
 
@@ -400,9 +376,11 @@ va donner ceci :
 4 * 3 = 12
 ```
 
+
 ### **Analyse grâce à PythonTutor**
 
 ![image.png](Boucle%20for%20in/image%202.png)
+
 
 ### **Exercice 3**
 
@@ -419,17 +397,6 @@ Mamie dit : « et une cuillère pour Riri ! »
 Mamie dit : « et une cuillère pour Fifi ! »
 Mamie dit : « et une cuillère pour Loulou ! »
 ```
-
-- **Correction**
-    
-    ```python
-    adultes = ['Papa', 'Maman', 'Mamie']
-    enfants = ['Riri', 'Fifi', 'Loulou']
-    
-    for parent in adultes:
-        for enfant in enfants:
-            print(parent, 'dit : « et une cuillère pour', enfant, '! »')
-    ```
     
     ---
     
@@ -452,15 +419,6 @@ Maman dit : « et une cuillère de compote pour Riri ! »
 ...
 ```
 
-- **Correction**
-    
-    ```python
-    for parent in ['Papa', 'Maman', 'Mamie']:
-        for enfant in ['Riri', 'Fifi', 'Loulou']:
-            for nourriture in ['purée', 'compote']:
-                print(parent, 'dit : « et une cuillère de', nourriture, 'pour', enfant, '! »')
-    ```
-    
     ---
     
 
