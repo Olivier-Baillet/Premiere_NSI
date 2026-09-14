@@ -19,14 +19,7 @@ Alex a eu le César du meilleur acteur
 Roschdy a eu le César du meilleur acteur
 ```
 
-### **Correction**
 
-```python
-liste_acteurs = ['Tahar', 'Omar', 'Guillaume', 'Swann', 'Alex', 'Roschdy']
-
-for acteur in liste_acteurs:
-    print(acteur, 'a eu le César du meilleur acteur')
-```
 
 > 
 > 
@@ -62,15 +55,7 @@ print(chaine)
 
 Cette variable chaine est appelée un **accumulateur**.
 
-### **Correction**
 
-```python
-chaine = ''
-for lettre in ['b', 'r', 'a', 'v', 'o']:
-    chaine = chaine + lettre #
-
-print(chaine)
-```
 
 ## **Exercice 3**
 
@@ -94,18 +79,7 @@ mot_secret = ""
 # à vous !
 ```
 
-### **Correction**
 
-```python
-mystere = [111, 107, 44, 32, 98, 105, 101, 110, 32, 106, 111, 117, 233]
-mot_secret = ""
-
-for nombre in mystere:
-    lettre = chr(nombre)
-    mot_secret = mot_secret + lettre
-
-print(mot_secret)
-```
 
 ## **Exercice 4**
 
@@ -113,27 +87,12 @@ On souhaite calculer la somme des 1000 premiers nombres entiers naturels, c'est-
 
 Écrire un programme avec une variable `somme` **accumulateur** (comme à l'exercice 3) qui contiendra la valeur souhaitée en fin de programme.
 
-### **Correction**
 
-```python
-somme = 0
-for k in range(1001):
-    somme += k
-print(somme)
-```
 
 ## **Exercice 5**
 
 Calculer $1 * 2 * 3 * … 99 * 100$ .
 
-### **Correction**
-
-```python
-produit = 1
-for k in range(1,101):
-    produit = produit * k
-print(produit)  
-```
 
 ## **Exercice 6**
 
@@ -151,13 +110,7 @@ La sortie doit ressembler à :
 9*9 = 81    
 ```
 
-### **Correction**
 
-```python
-for a in range(7, 10):
-    for b in range(1, 10):
-        print(a, '*', b, '=', a*b)
-```
 
 ## **Exercice 7**
 
@@ -165,14 +118,7 @@ Sur un jeu d'échecs, les cases sont repérées par une lettre (de A jusqu'à H)
 Les cases sont donc A1, A2, A3, ..., H7, H8.
 Proposer un code qui écrit **toutes** les cases possibles.
 
-### **Correction**
 
-```python
-for lettre in 'ABCDEFGH':
-    for chiffre in '12345678':
-        case = lettre + chiffre
-        print(case)
-```
 
 Autre solution utilisant la conversion d'un entier en chaine de caractères, grâce à la fonction `str` :
 
@@ -195,13 +141,3 @@ Dans ma trousse je dispose de 5 feutres de couleur :
 Pour un exercice, je dois colorier 3 pastilles en choissant sans aucune contrainte des couleurs parmi les 5 disponibles. Je peux tout colorier en jaune (`JJJ`) ou bien colorier la 1ère en orange, la 2ème en bleu, la 3ème en vert (`OBV` )
 
 Faire afficher la totalité des combinaisons possibles.
-
-**Correction**
-
-```python
-couleurs = 'JVNBO'
-for c1 in couleurs:
-    for c2 in couleurs:
-        for c3 in couleurs:
-            print(c1 + c2 + c3)
-```
