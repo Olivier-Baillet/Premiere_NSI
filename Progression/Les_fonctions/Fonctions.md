@@ -60,7 +60,7 @@ meoww
 > 
 > 
 > 
-> <aside>
+> <aside markdown="1">
 > 
 > ### **Vocabulaire**
 > 
@@ -146,7 +146,7 @@ def f(x):
 > 
 > 
 > 
-> <aside>
+> <aside markdown="1">
 > 
 > #### **Différence fondamentale entre `return` et `print`**
 > 
@@ -241,7 +241,7 @@ def h(x):
 
 ## 5.1 Notion d'espace de noms
 
-<aside>
+<aside markdown="1">
 
 #### **Définitions**
 
@@ -255,7 +255,7 @@ Quelles sont les règles régissant ces espaces de noms ? Les frontières entre 
 
 ## 5.2 Règles d'accès en lecture et en modification d'une variable suivant son espace d'origine
 
-<aside>
+<aside markdown="1">
 
 #### **Règles d'accès aux variables locales et globales**
 
@@ -316,7 +316,7 @@ test_bac(ma_moyenne)
 
 ![image](https://glassus.github.io/premiere_nsi/T1_Demarrer_en_Python/1.5_Fonctions/data/meme_global_perche.jpeg)
 
-<aside>
+<aside markdown="1">
 
 ### **À propos de la règle n°3**
 
