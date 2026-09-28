@@ -5,11 +5,7 @@
 Écrire une fonction `maximum` qui prend deux nombres en paramètres et qui renvoie le plus grand des deux.
 
 ## **Exercice 2**
-
-Transformez les programmes des exercices 4 et 5 de la section 6.1.3 (if) en fonctions.
-
-- **Exercice 4** : la fonction prend un entier (l'année) en paramètre et renvoie `True` ou `False` selon que l'année est bissextile ou non.
-- **Exercice 5** : la fonction prend une chaine de caractères en paramètre et renvoie le nombre de voyelles.
+Écrire une fonction qui prend en paramètre un entier (l'année) et renvoie `True` ou `False` selon que l'année est bissextile ou non.
 
 ## **Exercice 3**
 
