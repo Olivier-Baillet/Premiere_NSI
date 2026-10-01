@@ -4,18 +4,18 @@
 
 Écrire une fonction `maximum` qui prend deux nombres en paramètres et qui renvoie le plus grand des deux.
 
-'''
+```python
 Correction 
 def maximum(a, b):
     if a > b:
         return a
     return b
-'''
+```
 
 ## **Exercice 2**
 Écrire une fonction qui prend en paramètre un entier (l'année) et renvoie `True` ou `False` selon que l'année est bissextile ou non.
 
-'''
+```python
 Correction 
 def est_bissextile(annee):
   if annee % 400 == 0:
@@ -24,7 +24,7 @@ def est_bissextile(annee):
     if annee % 100 != 0:
       return True
   return False
-'''
+```
 
 ## **Exercice 3**
 
