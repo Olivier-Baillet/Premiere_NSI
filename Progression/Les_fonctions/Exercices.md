@@ -123,6 +123,7 @@ La [conjecture de Syracuse](https://fr.wikipedia.org/wiki/Conjecture_de_Syracuse
 ## **Exercice 10**
 
 **Q1.** Écrire une fonction `temps_de_vol` qui prend un nombre `n` en paramètre et qui renvoie le nombre d'étapes pour arriver à 1, en partant de `n`.
+En utilisant la fonction `suivant` de l'exercice précédant pour passer à l'étape suivante.
 
 **Q2.** Écrire une fonction `temps_max(nmax)` qui affiche le plus grand temps de vol pour un nombre entre 1 et `nmax`.
 
