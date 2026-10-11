@@ -20,7 +20,7 @@ En voici quelques extraits :
 
 ![image](https://glassus.github.io/terminale_nsi/T2_Programmation/2.4_Pratiques_de_programmation/data/standards.jpg)
 
-▶ Il faut mettre une espace (oui, en typographie, on dit «une» espace et non pas «un» espace) avant et après chaque opérateur de comparaison, d'affectation, ou mathématique (`=, ==, >, +, *, ...` )
+Il faut mettre une espace (oui, en typographie, on dit «une» espace et non pas «un» espace) avant et après chaque opérateur de comparaison, d'affectation, ou mathématique (`=, ==, >, +, *, ...` )
 
 ```python
 # PAS BIEN
@@ -40,7 +40,7 @@ if x > 3:
     print("ok")
 ```
 
-▶ Pour les opérateurs mathématiques, on essaie de reconstituer les groupes de priorité (lorsqu'il y en a) :
+Pour les opérateurs mathématiques, on essaie de reconstituer les groupes de priorité (lorsqu'il y en a) :
 
 ```python
 # PAS BIEN
@@ -60,7 +60,7 @@ x = 3 * 2 + 5
 x = 3*2 + 5
 ```
 
-▶ On ne met pas d'espace à intérieur des parenthèses, des crochets ou des accolades :
+On ne met pas d'espace à intérieur des parenthèses, des crochets ou des accolades :
 
 ```python
 # PAS BIEN
@@ -72,7 +72,7 @@ for x in range(5):
     print('bonjour')
 ```
 
-▶ Pour les virgules, et les deux points : pas d'espace avant mais une espace après.
+Pour les virgules, et les deux points : pas d'espace avant mais une espace après.
 
 ```python
 # PAS BIEN
@@ -88,9 +88,9 @@ On peut contrôler si son code vérifie les standards de la PEP8 sur ce site [ht
 
 ## 1.2 Les conventions de nommage
 
-▶ Les variables à une lettre (comme `i`, `j`, `k` ) sont réservées aux indices (notamment dans les boucles).
+Les variables à une lettre (comme `i`, `j`, `k` ) sont réservées aux indices (notamment dans les boucles).
 
-▶ Les autres variables doivent avoir des noms explicites, éventuellement écrits en `snake_case` si plusieurs mots doivent être reliés.
+Les autres variables doivent avoir des noms explicites, éventuellement écrits en `snake_case` si plusieurs mots doivent être reliés.
 
 ```python
 # PAS BIEN
@@ -109,7 +109,7 @@ Rappel des différents types de casse :
 - `PascalCase` : les mots sont séparés par des majuscules et la 1ère lettre est majuscule. Conseillé en C.
 - `kebab-case` : les mots sont séparés par des tirets courts. Conseillé en HTML - CSS.
 
-▶ Cas particulier des classes en Programmation Orientée Objet : leur nom doit commencer par une majuscule.
+Cas particulier des classes en Programmation Orientée Objet : leur nom doit commencer par une majuscule.
 
 ```python
 # PAS BIEN
