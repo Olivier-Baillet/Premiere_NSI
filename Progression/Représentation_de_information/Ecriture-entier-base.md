@@ -25,17 +25,17 @@ Ensuite, on fait un paquet de paquets, la centaine (100, c'est à dire $10 * 10 
 
 Au final, si on écrit le nombre 2023, on sait que c'est:
 
-- **2** mille, c'est-à-dire $2*10^{3}$;
-- **0** centaine, c'est-à-dire $0*10^{2}$;
-- **2** dizaines, c'est-à-dire $2*10^{1}$;
-- **3** unités, c'est-à-dire $3*10^{0}$.
+- **2** mille, c'est-à-dire $$2*10^{3}$$;
+- **0** centaine, c'est-à-dire $$0*10^{2}$$;
+- **2** dizaines, c'est-à-dire $$2*10^{1}$$;
+- **3** unités, c'est-à-dire $$3*10^{0}$$.
 
 </aside>
 
 ![](https://cgouygou.github.io/1NSI/T01_TypesBase/images/homer2.png)
 
 <aside markdown="1">
-Et bien entendu, $2026 = 2*10^{3} + 0*10^{2} + 2 *10^{1} + 6 *10^{0}$
+Et bien entendu, $$2026 = 2*10^{3} + 0*10^{2} + 2 *10^{1} + 6 *10^{0}$$
 
 </aside>
 
@@ -55,11 +55,11 @@ Ainsi, «son» 10 signifierait 1 paquet de 8 et 0 unité, soit «notre» 8... Et
 
 Enfin, 2026 (en décimal) s'écrit 3752 en octal puisque :
 
-$3752 = 3*8^{3} + 7*8^{2} + 5 *8^{1} + 2 *8^{0}$
+$$3752 = 3*8^{3} + 7*8^{2} + 5 *8^{1} + 2 *8^{0}$$
 
-$= 3*512 + 7*64 + 5 *8 + 2 *1$
-$= 1536 + 448 +40 +2$
-$= 2026$
+$$= 3*512 + 7*64 + 5 *8 + 2 *1$$
+$$= 1536 + 448 +40 +2$$
+$$= 2026$$
 
 </aside>
 
@@ -101,16 +101,16 @@ $= 2026$
 
 <u>**Exemples**</u>
 
-$312_{5} = 3 5^{2} + 1*  5^{1} + 2 * 5 ^{0}$
+$$312_{5} = 3 5^{2} + 1*  5^{1} + 2 * 5 ^{0}$$
 
-$= 3 * 25 + 1 * 5 + 2 * 1$
+$$= 3 * 25 + 1 * 5 + 2 * 1$$
 
-$= 82$ 
+$$= 82$ $
 
-$25072_{8} = 2 * 8^{4} + 5 * 8 ^{3} + 0 * 8^{2} + 7 * 8^{1} + 2 * 8^{0}$
+$$25072_{8} = 2 * 8^{4} + 5 * 8 ^{3} + 0 * 8^{2} + 7 * 8^{1} + 2 * 8^{0}$$
 
-$= 2 * 4096 + 5 512 + 78 + 2*1$
-$= 10810$
+$$= 2 * 4096 + 5 512 + 78 + 2*1$$
+$$= 10810$$
 
 </aside>
 
