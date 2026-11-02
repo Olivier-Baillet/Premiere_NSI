@@ -39,8 +39,9 @@ Et bien entendu, $2026 = 2*10^{3} + 0*10^{2} + 2 *10^{1} + 6 *10^{0}$
 > La position de chaque chiffre dans l'écriture du nombre correspond à la puissance de 10 par laquelle on le multiplie.
 > 
 
-<aside>
 
+<aside markdown="1">
+  
 <u>**Un autre exemple, la base octale**</u>
 
 Pour Homer Simpson, qui n'a que 8 doigts, il aurait été certainement plus naturel de faire des paquets de 8... et donc de manipuler seulement 8 chiffres : 0, 1, 2, 3, 4, 5, 6 et 7.
@@ -92,7 +93,8 @@ $= 2026$
 | 21 | 17 |
 | ... | ... |
 
-<aside>
+
+<aside markdown="1">
 
 <u>**Exemples**</u>
 
@@ -158,7 +160,8 @@ Par exemple, la couleur rouge ci-contre a pour composantes (178, 26, 15), ce qui
 
 ![](https://cgouygou.github.io/1NSI/T01_TypesBase/images/rouge_B21A0F.png)
 
-<aside>
+
+<aside markdown="1">
 
 <u>**Convertisseur**</u>
 
