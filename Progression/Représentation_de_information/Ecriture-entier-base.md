@@ -34,7 +34,10 @@ Au final, si on écrit le nombre 2023, on sait que c'est:
 
 ![](https://cgouygou.github.io/1NSI/T01_TypesBase/images/homer2.png)
 
+<aside markdown="1">
 Et bien entendu, $2026 = 2*10^{3} + 0*10^{2} + 2 *10^{1} + 6 *10^{0}$
+
+</aside>
 
 > La position de chaque chiffre dans l'écriture du nombre correspond à la puissance de 10 par laquelle on le multiplie.
 > 
