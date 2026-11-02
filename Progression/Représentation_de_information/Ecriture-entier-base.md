@@ -19,6 +19,8 @@ Pour écrire les nombres, regroupés en paquets de 10, il a donc fallu inventer 
 
 Et le nombre 10 ne signifie ni plus ni moins que 1 paquet et 0 unité.
 
+<aside markdown="1">
+  
 Ensuite, on fait un paquet de paquets, la centaine (100, c'est à dire $10 * 10 = 10^{2}$), puis un paquet de centaines, le millier (1000, c'est-à-dire $10 * 10 * 10 = 10^{3}$), et ainsi de suite.
 
 Au final, si on écrit le nombre 2023, on sait que c'est:
@@ -27,6 +29,8 @@ Au final, si on écrit le nombre 2023, on sait que c'est:
 - **0** centaine, c'est-à-dire $0*10^{2}$;
 - **2** dizaines, c'est-à-dire $2*10^{1}$;
 - **3** unités, c'est-à-dire $3*10^{0}$.
+
+</aside>
 
 ![](https://cgouygou.github.io/1NSI/T01_TypesBase/images/homer2.png)
 
