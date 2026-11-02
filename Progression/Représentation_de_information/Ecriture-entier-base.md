@@ -55,7 +55,7 @@ Ainsi, «son» 10 signifierait 1 paquet de 8 et 0 unité, soit «notre» 8... Et
 
 Enfin, 2026 (en décimal) s'écrit 3752 en octal puisque :
 
-$$3752 = 3*8^{3} + 7*8^{2} + 5 *8^{1} + 2 *8^{0}$$
+$$3752 = 3 *8^{3} + 7 *8^{2} + 5 *8^{1} + 2 *8^{0}$$
 
 $$= 3*512 + 7*64 + 5 *8 + 2 *1$$
 $$= 1536 + 448 +40 +2$$
