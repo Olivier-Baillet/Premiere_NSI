@@ -1,3 +1,13 @@
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['\\[', '\\]']]
+    }
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 # Écriture d'un entier dans une base
 
 > Le monde se divise en 10 catégories : ceux qui comprennent le binaire et ceux qui ne le comprennent pas.
