@@ -42,11 +42,6 @@ Au final, si on écrit le nombre 2023, on sait que c'est:
 
 - **3** unités, c'est-à-dire $$3 \times 10^{0}$$.
 
-</aside>
-
-![](https://cgouygou.github.io/1NSI/T01_TypesBase/images/homer2.png)
-
-<aside markdown="1">
 
 Et bien entendu, $$2026 = 2 \times 10^{3} + 0 \times 10^{2} + 2 \times 10^{1} + 6 \times 10^{0}$$
 
@@ -55,6 +50,8 @@ Et bien entendu, $$2026 = 2 \times 10^{3} + 0 \times 10^{2} + 2 \times 10^{1} + 
 > La position de chaque chiffre dans l'écriture du nombre correspond à la puissance de 10 par laquelle on le multiplie.
 > 
 
+
+![](https://cgouygou.github.io/1NSI/T01_TypesBase/images/homer2.png)
 
 <aside markdown="1">
 
