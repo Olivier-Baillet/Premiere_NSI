@@ -129,7 +129,7 @@ $$= 10810$$
 
 # 3 Le système binaire (base 2)
 
-### **Le binaire**
+## **Le binaire**
 
 - Le système binaire est le système de numération de base $$b = 2$$.
 - Il utilise donc seulement deux chiffres, 0 et 1, appelés **bits** (contraction de l'anglais binary digit).
@@ -137,9 +137,9 @@ $$= 10810$$
 - Un regroupement de 8 bits est appelé un **octet**.
 - Avec $$n$$ bits, on écrit $$2^{n}$$ nombres entiers, de $$0$$ jusqu'à $$2^{n} - 1$$.
 
-### **Conversions**
+## **Conversions**
 
-#### **Binaire → Décimal**
+### **Binaire → Décimal**
 
 Il est utile de connaître alors les puissances de 2 pour convertir rapidement de l'écriture binaire vers l'écriture décimale.
 
@@ -147,26 +147,30 @@ Il est utile de connaître alors les puissances de 2 pour convertir rapidement d
 
 Par exemple $$10110101_{2} = 128 + 32 + 16 + 4 + 1 = 181$$.
 
-#### **Décimal → Binaire**
+### **Décimal → Binaire**
 
 - On peut utiliser l'algorithme de soustraction: on soustrait du nombre la plus grande puissance de 2 possible, et on recommence...
 - On utilise l'algorithme de divisions: on effectue les divisions successives du nombre par 2. L'écriture en binaire est donnée par les restes lus de bas en haut.
 
 ![](https://cgouygou.github.io/1NSI/T01_TypesBase/images/divisions.png)
 
-#### **Décimal → Base quelconque**
+### **Décimal → Base quelconque**
 
 Les deux algorithmes de soustraction et de divisions fonctionnent également pour la conversion du décimal vers n'importe quelle autre base.
 
+### **Exercice 1**
+
+Quelle est la valeur maximale d'un octet (un octet = 8 chiffres binaires) ?
+
 # 4 Le système hexadécimal (base 16)
 
-### **L'hexadécimal**
+## **L'hexadécimal**
 
 - Le système hexadécimal est le système de numération de base $$b = 16$$.
 - Il utilise donc 16 chiffres : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.
 - Bien qu'il nécessite plus de chiffres, ce système donne des écritures plus courtes et particulièrement pratique du fait que 16 est une puissance de 2 : la conversion entre les systèmes binaire et hexadécimal se fait sans calcul, uniquement par regroupement de 4 bits.
 
-### **Couleurs**
+## **Couleurs**
 
 Le système hexadécimal est en particulier un mode de code informatique des couleurs.
 
@@ -177,10 +181,29 @@ Par exemple, la couleur rouge ci-contre a pour composantes (178, 26, 15), ce qui
 ![](https://cgouygou.github.io/1NSI/T01_TypesBase/images/rouge_B21A0F.png)
 
 
-<aside markdown="1">
+### **Exercice 2**
 
-<u>**Convertisseur**</u>
+- Donner la valeur des octets FF, 3A, B2.
+- Expliquer pourquoi la couleur RGB (138,255,51) a pour code html #8AFF33.
+- Quelle est la couleur html du blanc ?
 
-Un [convertisseur](http://www.proftnj.com/RGB3.htm) bien utile.
+# 5 En python
 
-</aside>
+## **Pour passer du décimal à l'hexadécimal :**
+
+On peut utiliser la fonction `hex(nombre)`. Elle renvoie une chaîne de caractère où le nombre hexadécimal est précédé de `'0x'`.
+
+```python
+>>> hex(125)
+'0x7d'
+```
+
+## **Pour passer de l'hexadécimal au décimal :**
+
+On peut utiliser la fonction `int("nombre",base)`.
+
+```python
+>>> int("FF", 16)
+ 255
+```
+
