@@ -1,6 +1,6 @@
 # Valeurs booléennes
 
-<aside>
+<aside markdown="1">
 
 ## **Histoire de l'informatique**
 
@@ -70,7 +70,7 @@ Les opérations fondamentales ne sont plus l'addition et la multiplication mais:
 | V | F | V |
 | V | V | V |
 
-<aside>
+<aside markdown="1">
 
 ### **`True` & `False`**
 
