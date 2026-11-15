@@ -88,48 +88,6 @@ False
 
 </aside>
 
-### **Exemples**
-
-```python
->>> a = 2
->>> a == 3
-False
-
->>> a == 2
-True
-
->>> a != 1
-True
-
->>> a > 2
-False
-
->>> a <= 5
-True
-
->>> a % 2 == 0
-True
-
->>> x = (0 == 1)
->>> x
-False
-
->>> y = (3 + 2 == 5)
->>> y
-True
-```
-
-```python
->>> 'e' in 'abracadabra'
-False
-
->>> 'b' in 'abracadabra'
-True
-
->>> 'A' not in 'abracadabra'
-True
-```
-
 ### **Opérateurs de comparaison**
 
 | **Opérateur** | **Signification** |
@@ -143,16 +101,44 @@ True
 | `in` | appartient à |
 | `not in` | n'appartient pas à |
 
+
+### **Exemples**
+
 ```python
+>>> a = 2
+>>> a == 3
+
+>>> a == 2
+
+>>> a != 1
+
+>>> a > 2
+
+>>> a <= 5
+```
+
+```python
+>>> a % 2 == 0
+
+>>> x = (0 == 1)
+>>> x
+
+>>> y = (3 + 2 == 5)
+>>> y
+
 >>> True and False
-False
 
 >>> True and True
-True
 
 >>> False or True
-True
 
 >>> not True
-False
+
+>>> 'e' in 'abracadabra'
+
+>>> 'b' in 'abracadabra'
+
+>>> 'A' not in 'abracadabra'
 ```
+
+
