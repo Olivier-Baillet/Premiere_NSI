@@ -27,6 +27,7 @@ i = b or c
 j = not c and (d or e)
 ```
 
+<aside markdown="1">
 ## **Exercice 2 : le «ou exclusif»**
 
 Une autre fonction logique importante est le **ou exclusif**, ou «disjonction exclusive».
@@ -39,16 +40,24 @@ Si x et y sont deux booléens, alors $$**x ^ y = (x & ¬y) | (¬x & y)**$$.
 
 Construire la table de vérité du `xor`.
 
+</aside>
+
+<aside markdown="1">
 ## **Exercice 3**
 
 Construire la table de vérité de l'expression **(x | y) & z** où x, y et z sont trois booléens.
 
+</aside>
+
+<aside markdown="1">
 ## **Exercice 4**
 
 À l'aide de tables de vérité, démontrer les lois de Morgan:
 
 - $$¬(x | y) = ¬x & ¬y$$
 - $$¬(x & y) = ¬x | ¬y$$
+
+</aside>
 
 ## **Exercice 5**
 
