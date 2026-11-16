@@ -1,13 +1,3 @@
-<script>
-  MathJax = {
-    tex: {
-      inlineMath: [['\\(', '\\)']],
-      displayMath: [['\\[', '\\]']]
-    }
-  };
-</script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
 ## **Exercice 1**
 
 Prédire si les variables suivantes contiennent le booléen `True` ou le booléen `False`.
@@ -29,35 +19,29 @@ j = not c and (d or e)
 
 ## **Exercice 2 : le «ou exclusif»**
 
-<aside markdown="1">
 Une autre fonction logique importante est le **ou exclusif**, ou «disjonction exclusive».
 
 C'est le «ou» dans le sens de «Fromage *ou* dessert» dans un menu au restaurant. Soit l'un, soit l'autre, mais pas les deux.
 
 Il se note en général `xor` ou `^` en logique (`^` en Python).
 
-Si x et y sont deux booléens, alors $$**x ^ y = (x & ¬y) | (¬x & y)**$$.
+Si x et y sont deux booléens, alors **x ^ y = (x & ¬y) / (¬x & y)**.
 
 Construire la table de vérité du `xor`.
 
-</aside>
 
 ## **Exercice 3**
 
-<aside markdown="1">
-Construire la table de vérité de l'expression **(x | y) & z** où x, y et z sont trois booléens.
+Construire la table de vérité de l'expression **(x / y) & z** où x, y et z sont trois booléens.
 
-</aside>
 
 ## **Exercice 4**
 
-<aside markdown="1">
 À l'aide de tables de vérité, démontrer les lois de Morgan:
 
-- $$¬(x | y) = ¬x & ¬y$$
-- $$¬(x & y) = ¬x | ¬y$$
+- ¬(x / y) = ¬x & ¬y
+- ¬(x & y) = ¬x / ¬y
 
-</aside>
 
 ## **Exercice 5**
 
