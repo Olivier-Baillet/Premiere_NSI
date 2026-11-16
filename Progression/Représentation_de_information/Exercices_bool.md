@@ -27,9 +27,9 @@ i = b or c
 j = not c and (d or e)
 ```
 
-<aside markdown="1">
 ## **Exercice 2 : le «ou exclusif»**
 
+<aside markdown="1">
 Une autre fonction logique importante est le **ou exclusif**, ou «disjonction exclusive».
 
 C'est le «ou» dans le sens de «Fromage *ou* dessert» dans un menu au restaurant. Soit l'un, soit l'autre, mais pas les deux.
@@ -42,16 +42,16 @@ Construire la table de vérité du `xor`.
 
 </aside>
 
-<aside markdown="1">
 ## **Exercice 3**
 
+<aside markdown="1">
 Construire la table de vérité de l'expression **(x | y) & z** où x, y et z sont trois booléens.
 
 </aside>
 
-<aside markdown="1">
 ## **Exercice 4**
 
+<aside markdown="1">
 À l'aide de tables de vérité, démontrer les lois de Morgan:
 
 - $$¬(x | y) = ¬x & ¬y$$
