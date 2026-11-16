@@ -25,7 +25,7 @@ C'est le «ou» dans le sens de «Fromage *ou* dessert» dans un menu au restaur
 
 Il se note en général `xor` ou `^` en logique (`^` en Python).
 
-Si x et y sont deux booléens, alors **x ^ y = (x & ¬y) | (¬x & y)**.
+Si x et y sont deux booléens, alors $$**x ^ y = (x & ¬y) | (¬x & y)**$$.
 
 Construire la table de vérité du `xor`.
 
@@ -37,8 +37,8 @@ Construire la table de vérité de l'expression **(x | y) & z** où x, y et z so
 
 À l'aide de tables de vérité, démontrer les lois de Morgan:
 
-- ¬(x | y) = ¬x & ¬y
-- ¬(x & y) = ¬x | ¬y
+- $$¬(x | y) = ¬x & ¬y$$
+- $$¬(x & y) = ¬x | ¬y$$
 
 ## **Exercice 5**
 
