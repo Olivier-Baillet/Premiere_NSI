@@ -1,3 +1,13 @@
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['\\[', '\\]']]
+    }
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 ## **Exercice 1**
 
 Prédire si les variables suivantes contiennent le booléen `True` ou le booléen `False`.
